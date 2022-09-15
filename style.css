@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+:root {
+  --blue: #436fc1;
+  --grey: #b6b6b9;
+}
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+  padding: 10px 40px;
+  background-color: var(--grey);
+}
+
+a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 20px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+ul {
+  list-style: none;
+}
+
+h2 {
+  padding-top: 15px;
+}
+
+.recipe-link {
+  padding: 8px 0;
+}
