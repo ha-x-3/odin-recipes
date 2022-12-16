@@ -8,12 +8,32 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <img src="img/recipes.jpg">
-    <ul>
-        <li class="recipe-link"><a href="recipes/pasta-salad.html">Pasta Salad</a></li>
-        <li class="recipe-link"><a href="recipes/ice-cream.html">Vanilla Ice Cream</a></li>
-        <li class="recipe-link"><a href="recipes/ants-on-a-log.html">Ants On A Log (Sweet)</a></li>
-    </ul>
+    <div class="wrapper">
+        <h1 class="site-title">Island Recipes</h1>
+        <div class="hero">
+            <div class="search-bar">
+                <label for name="search">Search for a recipe here!</label>
+                <input name="search" type="text" id="search" placeholder="Search...">
+                <div class="search-type">
+                    <input type="radio" id="by-ingredient" name="search-select" value="ByIngredient">
+                    <label for="by-ingredient">By Ingredient</label>
+                    <input type="radio" id= by-recipe name="search-select" value="ByRecipe">
+                    <label for="by-recipe">By Recipe</label>
+                    <button class="submit">Submit</button>
+                </div>
+            </div>
+            <img src="img/IMG_3353.PNG" alt="Cali girl">
+        </div>
+        <div class="recipes">
+            <ul class="recipes">
+                <li class="recipe-link"><a href="recipes/pasta-salad.html">Pasta Salad</a></li>
+                <li class="recipe-link"><a href="recipes/ice-cream.html">Vanilla Ice Cream</a></li>
+                <li class="recipe-link"><a href="recipes/ants-on-a-log.html">Ants On A Log (Sweet)</a></li>
+            </ul>
+        </div>
+        <div class="wheel">
+            <button>Spin the Wheel!</button>
+        </div>
+    </div>
 </body>
 </html>

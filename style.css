@@ -1,40 +1,141 @@
+/*Global*/
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
 }
 
 :root {
-  --blue: #436fc1;
-  --grey: #b6b6b9;
+  --blue: rgba(42, 119, 150, 0.614);
+  --grey: #e5e5e9;
+  --black: rgb(58, 55, 55);
 }
 
 body {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
-  padding: 10px 40px;
-  background-color: var(--grey);
+  font-family:'Helvetica', 'Lucida Sans Unicode', sans-serif;
+  background-color: var(--blue);
+  color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
-  color: var(--blue);
   font-size: 20px;
+  align-self: flex-start;
+  padding: 15px 20px;
+  color: var(--black);
 }
 
 img {
-  width: 300px;
-  height: auto;
-  border-radius: 4px;
+  width: auto;
+  height: 300px;
+  padding: 15px 0;
 }
 
 ul {
   list-style: none;
 }
 
+ul.recipes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ol {
+  padding-left:15px;
+  width: 65vw;
+}
+
+h1 {
+  font-size: 3em;
+}
+
 h2 {
   padding-top: 15px;
 }
 
+/*Main Page*/
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(circle, rgb(231, 231, 234) 0%, rgb(212, 211, 211) 50%, rgb(174, 173, 172) 100%);
+  border-radius: 8px;
+  box-shadow: 0 0 10px 10px var(--blue) inset;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+.site-title {
+  margin-top: 50px;
+}
+
+.hero {
+  display: flex;
+  width: 70vw;
+  margin: auto;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+input {
+  padding: 10px;
+}
+
+.search-type {
+  display: inline;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+
+#search {
+  height: 30px;
+  width: 300px;
+  align-self: center;
+}
+
+.submit {
+  height: 25px;
+  width: 60px;
+}
+
 .recipe-link {
   padding: 8px 0;
+}
+
+.recipes {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Recipe Pages*/
+.button {
+  height: 40px;
+  width: 150px;
+  background-color: var(--grey);
+  color: var(--black);
+}
+
+.buttons {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  width: 60vw;
 }
