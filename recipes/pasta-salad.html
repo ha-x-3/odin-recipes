@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <title>Pasta Salad</title>
+    <script type="text/javascript">
+        function newPopup(url) {
+            popupWindow = window.open(
+                url, 'popUpWindow', 'height=500, width=800, left=10, top=10, resizable=yes, scrollbars=yes, toolbar=yes, menubar=no, location=no, directories=no, status=yes')
+        }
+    </script>
 </head>
 <body>
     <div class="wrapper">
         <a href="../index.html"><--Back</a>
         <div class="buttons">
-            <button class="button">Make this Recipe!</button>
-            <button class="button">Printable Version</button>
+            <a href="JavaScript:newPopup('popup-pasta-salad.html');"><button class="button">Make this Recipe!</button></a>
+            <a><button class="button">Printable Version</button></a>
         </div>
         <h1>Pasta Salad</h1>
         <img src="../img/pasta-salad.jpg" alt="pasta salad" class="picture">
