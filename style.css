@@ -66,7 +66,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 0 10px 10px var(--blue) inset;
   width: 100vw;
-  height: auto;
+  height: 100%;
   justify-content: center;
   align-items: center;
   padding-bottom: 40px;
@@ -119,6 +119,7 @@ input {
 .recipes {
   display: flex;
   flex-direction: column;
+  height: 300px;
 }
 
 /*Recipe Pages*/
